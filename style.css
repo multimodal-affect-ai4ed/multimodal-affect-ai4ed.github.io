@@ -1,0 +1,36 @@
+:root {
+    --accent-color: #DF5033;
+}   
+
+body {
+    color: #222;
+}
+
+.accent-bg {
+    background-color: #8f2814;
+}
+.accent-txt {
+    color: var(--accent-color);
+}
+.text-section-padded {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+a, a:hover, a:active, a:focus {
+    outline: 0 !important;
+ }
+
+ .speaker-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.speaker-photo {
+    width: 25%;
+    margin-top: 3%;
+}
+
+.speaker-info {
+    width: 70%;
+}
