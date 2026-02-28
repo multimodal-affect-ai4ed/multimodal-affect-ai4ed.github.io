@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>HEAL@CHI'26</title>
+<title>MAAAI@AIED'26</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style_2024.css">
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -13,42 +11,42 @@
     const readLessBtn = document.querySelector('.read-less');
     const bioHidden = document.querySelector('.bio-hidden');
 
-    readMoreBtn.addEventListener('click', function() {
-        bioHidden.style.display = 'block';
-        readMoreBtn.style.display = 'none';
-    });
+    if(readMoreBtn && readLessBtn && bioHidden) {
+        readMoreBtn.addEventListener('click', function() {
+            bioHidden.style.display = 'block';
+            readMoreBtn.style.display = 'none';
+        });
 
-    readLessBtn.addEventListener('click', function() {
-        bioHidden.style.display = 'none';
-        readMoreBtn.style.display = 'inline';
-    });
+        readLessBtn.addEventListener('click', function() {
+            bioHidden.style.display = 'none';
+            readMoreBtn.style.display = 'inline';
+        });
+    }
 });
 </script>
-</head>
 
 <body class="sans-serif">
     <header class="sans-serif">
-        <div class="cover bg-left bg-center-l accent-bg" style="background-image: url('assets/chi2026-banner-full.png');">
+        <div class="cover bg-left bg-center-l accent-bg" style="background-image: url('assets/banner.svg');">
             <div class="pb4 pb4-m pb4-l">
                 <nav class="dt w-100 mw8 center">
                     <div class="dtc w6 v-mid pa1">
                         <a href="" class="f4 fw5 dib no-underline grow white pa2 grow">
-                            HEAL@CHI'26
+                            MAAAI@AIED
                         </a>
                     </div>
                     <div class="dtc v-mid tr pa3">
                         <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#cfp">Call for
                             Participation</a>
                         <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#info">Key Information</a>
-                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="chi2025.html">CHI 2025</a>
-                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="chi2024.html">CHI 2024</a>
+                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#agenda">Agenda</a>
                     </div>
                 </nav>
                 <div class="tc-l mt4 mt5-m mt6-l ph5 w-75 center">
-                    <h1 class="f2 f1-l fw6 white-90 mb0 lh-title"><b>HEAL @ CHI 2026</b><br><b>H</b>uman-centered <b>E</b>valuation and<br><b>A</b>uditing of <b>L</b>anguage Models</h1>
-                    <h2 class="fw3 f3 white-80 mt3 mb4">Barcelona | April 13-17, 2026</h2>
-                    <h3 class="fw3 f3 white-90 mt3 mb4 white accent-bg">Submission Deadline: <strong> <del>February 11</del> February 19, 2026 (AOE)</strong></h3>
-                    <a class="f6 link grow br3 ba bw1 ph3 pv2 mb2 dib accent-txt bg-white" href="https://openreview.net/group?id=ACM.org/CHI/2026/Workshop/HEAL" target="_blank">→ <b>Submit Your Paper</b></a>
+                    <h1 class="f2 f1-l fw6 white-90 mb0 lh-title">MAAAI: <b>M</b>ultimodal <b>A</b>ffective <b>A</b>nalytics in <b>A</b>I for Education</h1>
+                    [cite_start]<h2 class="fw3 f3 white-80 mt3 mb4">Design, Application, and Ethical Implications [cite: 2][cite_start]<br>AIED Workshop (Half-day) [cite: 33]</h2>
+                    <h3 class="fw3 f3 white-80 mt3 mb4">Location TBA</h3>
+                    <a class="f6 link grow br3 ba bw1 ph3 pv2 mb2 dib white" href="#cfp">→ Submit a Paper</a>
                 </div>
             </div>
         </div>
@@ -63,24 +61,88 @@
             </header>
             <div class="fn fl-ns w-70-ns">
                 <p class="f5 lh-copy mt0-ns">
-                <b>HEAL is back for its third iteration at CHI 2026!</b> This workshop addresses the ongoing "evaluation crisis" in LLM research and practice by bringing together HCI and AI researchers to rethink LLM evaluation and auditing from a human-centered perspective.
+                    [cite_start]As artificial intelligence becomes increasingly embedded in educational contexts, the ability of AI systems to perceive, interpret, and respond to learners' affect has shifted from a niche research interest to a central necessity[cite: 11]. [cite_start]While traditional research has prioritized "cold" cognitive processes, affect represents the "hot" functional dimension that is intrinsically intertwined with learning outcomes[cite: 18].
                 </p>
                 <p class="f5 lh-copy">
-                Building on successful workshops at CHI 2024 and CHI 2025, we continue exploring topics around understanding stakeholders' needs and goals, establishing human-centered evaluation and auditing methods, developing tools and resources, and fostering community collaboration.
+                    [cite_start]The Multimodal Affective Analytics in AI (MAAAI) workshop focuses on (1) AI-driven approaches in detecting and interpreting affective states through multimodal data streams and (2) the design of affect-aware AI systems that support emotional regulation and learner well-being[cite: 13]. [cite_start]By fostering interdisciplinary dialogue among researchers, designers, and practitioners, the workshop aims to advance ethically responsible affect-aware AI systems for education[cite: 14].
                 </p>
             </div>
         </article>
 
-        <article class="cf ph3 ph5-ns pv5" id="theme">
+        <article class="cf ph3 ph5-ns pv5" id="keynote">
             <header class="fn fl-ns w-30-ns pr4-ns">
                 <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
-                    Special Theme
+                    Keynote Speaker
+                </h1>
+            </header>
+            <div class="fn fl-ns w-70-ns">
+                <div class="speaker-container">
+                    <div class="speaker-photo">
+                        <div class="aspect-ratio aspect-ratio--1x1">
+                            <img src="./assets/roger.png" class="db bg-center cover aspect-ratio--object br-100" alt="Keynote Speaker">
+                        </div>
+                    </div>
+
+                    <div class="speaker-info">
+                        <h2>Dr. [cite_start]Roger Azevedo [cite: 47]</h2>
+                        <h3>Keynote Address</h3>
+                        [cite_start]<p>This address will set the stage by highlighting recent advancements in multimodal sensors and the ongoing challenges of interpreting "hot" affective states in "cold" cognitive environments[cite: 106].</p>
+                        <h3>Bio</h3>
+                        <p>
+                            [cite_start]Roger Azevedo is a professor in the School of Modeling Simulation and Training in University of Central Florida[cite: 47]. [cite_start]He is also an affiliated faculty in the Department of Computer Science and the Department of Internal Medicine at the University of Central Florida and is the lead scientist for the Learning Sciences Faculty Cluster Initiative[cite: 48]. [cite_start]His main research area includes examining the role of cognitive, metacognitive, affective, and motivational self-regulatory processes during learning with advanced learning technologies (e.g., intelligent tutoring systems, hypermedia, multimedia, simulations, serious games, immersive virtual learning environments)[cite: 49].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="cf ph3 ph5-ns pv5" id="agenda">
+            <header class="fn fl-ns w-30-ns pr4-ns">
+                <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
+                    Agenda
                 </h1>
             </header>
             <div class="fn fl-ns w-70-ns">
                 <p class="f5 lh-copy mt0-ns">
-                <b>AI Agents-in-the-Loop:</b> As practitioners increasingly turn to AI agents as evaluation partners, we must critically examine how to maintain human-centered approaches while leveraging agent capabilities for scale and efficiency. This year's theme explores the emerging frontier where human judgment meets agent automation—addressing fundamental questions about task allocation, meta-evaluation of evaluator agents, and the design of safeguards that preserve human agency while benefiting from automation.
+                    [cite_start]The MAAAI workshop is formatted as a half-day session (approx. 4 hours) aimed at bringing together a diverse cohort of learning scientists, AI specialists, and UX designers[cite: 97]. 
                 </p>
+                <ul class="agenda-list">
+                    <li>
+                        [cite_start]<h3>Opening Remarks [cite: 130]</h3>
+                        [cite_start]<p>Time: 14:15 - 14:30 [cite: 130]</p>
+                        [cite_start]<p>Introduction to the MAAAI vision and goals[cite: 130].</p>
+                    </li>
+                    <li>
+                        [cite_start]<h3>Keynote Speaker [cite: 130]</h3>
+                        [cite_start]<p>Time: 14:30 - 14:50 [cite: 130]</p>
+                        [cite_start]<p>Speaker: Prof. Roger Azevedo [cite: 130]</p>
+                    </li>
+                    <li>
+                        [cite_start]<h3>Lightning Talks [cite: 130]</h3>
+                        [cite_start]<p>Time: 14:50 - 15:50 [cite: 130]</p>
+                        [cite_start]<p>"Position Paper" presentations to spark ideas[cite: 130].</p>
+                    </li>
+                    <li>
+                        [cite_start]<h3>Coffee Break [cite: 130]</h3>
+                        [cite_start]<p>Time: 15:50 - 16:00 [cite: 130]</p>
+                        [cite_start]<p>Networking and informal discussion[cite: 130].</p>
+                    </li>
+                    <li>
+                        [cite_start]<h3>Interactive Design Seminar [cite: 130]</h3>
+                        [cite_start]<p>Time: 16:00 - 16:45 [cite: 130]</p>
+                        [cite_start]<p>Hands-on group activity: "Designing the Ideal Affect-Aware Tool." [cite: 130]</p>
+                    </li>
+                    <li>
+                        [cite_start]<h3>Plenary Discussion [cite: 130]</h3>
+                        [cite_start]<p>Time: 16:45 - 17:45 [cite: 130]</p>
+                        [cite_start]<p>Synthesizing themes: Ethics, Privacy, and "The Right to be Frustrated." [cite: 130]</p>
+                    </li>
+                    <li>
+                        [cite_start]<h3>Wrap-up & Next Steps [cite: 130]</h3>
+                        [cite_start]<p>Time: 18:15 [cite: 130]</p>
+                        [cite_start]<p>Closing remarks and information on publishment[cite: 130].</p>
+                    </li>
+                </ul>
             </div>
         </article>
 
@@ -91,11 +153,11 @@
                 </h1>
             </header>
             <div class="fn fl-ns w-70-ns">
-                <p><b>Submission deadline</b>: <del>February 11, 2026 (AoE)</del> <b>Extended to February 19, 2026 (AoE)</b></p>
-                <p><b>Notification of acceptance</b>: <del>February 25, 2026 (AoE)</del> <b>March 2, 2026 (AoE)</b></p>
-                <p><b>Workshop date</b>: April 13-17, 2026</p>
-                <p><b>Workshop location</b>: Barcelona, Spain (In-person)</a></p>
-                <p><b>Contact</b>: heal.workshop@gmail.com</a></p>
+                <p><b>Submission deadline</b>: TBA</p>
+                <p><b>Notification of acceptance</b>: TBA</p>
+                [cite_start]<p><b>Workshop date</b>: TBA (Half-day) [cite: 33]</p>
+                <p><b>Workshop location</b>: TBA</p>
+                [cite_start]<p><b>Contact</b>: <a href="mailto:xiaoshan.huang@mail.mcgill.ca">xiaoshan.huang@mail.mcgill.ca</a> [cite: 5]</p>
             </div>
         </article>
 
@@ -107,40 +169,19 @@
             </header>
             <div class="fn fl-ns w-60-ns">
                 <p class="f5 lh-copy mt0-ns">
-                    We welcome participants working on human-centered evaluation and auditing of language models. Topics of interest include, but are not limited to:
-
+                    [cite_start]We invite researchers, designers, and practitioners from the AIED, EDM, and Learning@Scale communities to participate[cite: 34]. [cite_start]Attendees are encouraged to submit 4-8 page position papers detailing recent empirical research or theoretical frameworks regarding multimodal affective analytics in education[cite: 99].
+                </p>
+                <p class="f5 lh-copy mt0-ns">
+                    [cite_start]The workshop's mission is structured around two central pillars[cite: 26]:
                     <ul>
-                        <li class="pv1">Empirical understanding of stakeholders' needs and goals in LLM evaluation and auditing</li>
-                        <li class="pv1">Human-centered evaluation and auditing methods for LLMs</li>
-                        <li class="pv1">Tools, processes, and guidelines for LLM evaluation and auditing</li>
-                        <li class="pv1">Discussion of regulatory measures and public policies for LLM auditing</li>
-                        <li class="pv1">Ethics in LLM evaluation and auditing</li>
-                    </ul>
-
-                    <b>Special Theme: AI Agents-in-the-Loop.</b> We invite papers engaging with this year's theme, including:
-                    <ul>
-                        <li class="pv1">Task allocation and workflow integration between human evaluators and AI agents</li>
-                        <li class="pv1">Impact of hybrid human-AI approaches on vulnerability discovery</li>
-                        <li class="pv1">Meta-evaluation frameworks for assessing trustworthiness of AI agents as auditing tools</li>
-                        <li class="pv1">Methodologies for evaluating complex agent behaviors (multi-step reasoning, tool use, emergent patterns)</li>
-                        <li class="pv1">Design patterns and safeguards for maintaining human oversight in automated evaluation</li>
-                        <li class="pv1">Empirical studies of agent-assisted evaluation in practice</li>
+                        <li class="pv1"><b>Pillar 1:</b> Detection and Interpretation of Affect in Learning Settings. [cite_start]Leveraging advanced AI techniques to decode complex affective states in real-time[cite: 27].</li>
+                        <li class="pv1"><b>Pillar 2:</b> Affect-Aware Design. [cite_start]Moving beyond detection to the creation of AI interventions that actively scaffold emotional regulation and promote learner well-being[cite: 29].</li>
                     </ul>
                 </p>
                 <p class="f5 lh-copy mt0-ns">
-                    <p class="pv1"><a style="font-weight: 700;">Submission Format:</a> 2-6 pages ACM double-column, excluding references.</p>
-                    <p class="pv1"><a style="font-weight: 700;">Submission Types:</a> Position papers, full or in-progress empirical studies, literature reviews, system demos, method descriptions, or encore of published work (non-archival).</p>
-                    <p class="pv1"><a style="font-weight: 700;">Review Process:</a> Double-blind (except encore submissions). Papers will be selected based on the quality of the submission and diversity of perspectives to allow for a meaningful exchange of knowledge between a broad range of stakeholders.</p>
-                    <p><a style="font-weight: 700;">Templates: </a> <a class="accent-txt" href="https://www.acm.org/binaries/content/assets/publications/word_style/interim-template-style/interim-layout.docx">[Word]</a> <a class="accent-txt" href="https://portalparts.acm.org/hippo/latex_templates/acmart-primary.zip">[LaTeX]</a> <a class="accent-txt" href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-primary-article-template/wbvnghjbzwpc">[Overleaf]</a></p>
-                    <p><a style="font-weight: 700;">Notes: </a>                    <ul>
-                        <li class="pv1">We encourage authors who submit also to help with the review process.</li>
-                        <li class="pv1">For an encore submission, you do not need to anonymize the submission. Encore submissions will go through a jury review process. </li>
-                        <li class="pv1">Please use \documentclass[sigconf,anonymous]{acmart} for submission. </li>
-                        <li class="pv1">Please be aware of OpenReview's moderation policy for newly created profiles: new profiles created without an institutional email will go through a moderation process that can take up to two weeks, while new profiles created with an institutional email will be activated automatically. </li>
-                    </ul></p>
-                </p>
-                <p>
-                    <a class="f6 link grow br3 ba bw1 ph3 pv2 mb2 dib accent-txt" href="https://openreview.net/group?id=ACM.org/CHI/2026/Workshop/HEAL" target="_blank">→ Submit Your Paper</a>
+                    [cite_start]<p class="pv1"><a style="font-weight: 700;">Submission Format:</a> 4-8 page position papers[cite: 99].</p>
+                    [cite_start]<p class="pv1"><a style="font-weight: 700;">Review Process:</a> These submissions will undergo a peer-review process by the organizing committee to ensure relevance and academic rigor[cite: 100].</p>
+                    [cite_start]<p class="pv1"><a style="font-weight: 700;">Dissemination:</a> To ensure a lasting impact, all accepted position papers will be published in a dedicated digital repository, such as the CEUR Workshop Proceedings (CEUR-WS)[cite: 126].</p>
                 </p>
             </div>
         </article>
@@ -152,113 +193,64 @@
                 </h1>
             </header>
             <div class="fn fl-ns w-70-ns">
-                <section class="cf w-200 pa2-ns">
+                <section class="cf w-100 pa2-ns">
                     <div class="cf w-100 measure-wide">
                         <div class="fl w-third pa2">
                             <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/willem.jpg" class="db bg-center cover aspect-ratio--object br-100" style="object-fit: cover;">
+                                <img src="./assets/xiaoshan.png" class="db bg-center cover aspect-ratio--object br-100" alt="Xiaoshan Huang">
                             </div>
-                            <a href="https://willemvandermaden.com" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Willem van der Maden</p>
-                                <p class="f6 fw4 mt2 black-60">IT University of Copenhagen</p>
-                            </a>
+                            <div class="ph2 ph0-ns pb3 db">
+                                [cite_start]<p class="f5-ns mb0 fw6 black-90">Xiaoshan Huang (Chair) [cite: 36]</p>
+                                [cite_start]<p class="f6 fw4 mt2 black-60">McGill University [cite: 5]</p>
+                            </div>
                         </div>
                         <div class="fl w-third pa2">
                             <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/deng.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                                <img src="./assets/andy.png" class="db bg-center cover aspect-ratio--object br-100" alt="Andy Nguyen">
                             </div>
-                            <a href="https://www.wesleydeng.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Wesley Hanwen Deng</p>
-                                <p class="f6 fw4 mt2 black-60">Carnegie Mellon University</p>
-                            </a>
+                            <div class="ph2 ph0-ns pb3 db">
+                                [cite_start]<p class="f5-ns mb0 fw6 black-90">Andy Nguyen (Co-chair) [cite: 43]</p>
+                                [cite_start]<p class="f6 fw4 mt2 black-60">University of Oulu, Finland [cite: 7, 43]</p>
+                            </div>
                         </div>
                         <div class="fl w-third pa2">
                             <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/yulu.png" class="db bg-center cover aspect-ratio--object br-100">
+                                <img src="./assets/roger_org.png" class="db bg-center cover aspect-ratio--object br-100" alt="Roger Azevedo">
                             </div>
-                            <a href="https://yululiu.github.io/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Yu Lu Liu</p>
-                                <p class="f6 fw4 mt2 black-60">Johns Hopkins University</p>
-                            </a>
+                            <div class="ph2 ph0-ns pb3 db">
+                                [cite_start]<p class="f5-ns mb0 fw6 black-90">Roger Azevedo (Co-organizer) [cite: 47]</p>
+                                [cite_start]<p class="f6 fw4 mt2 black-60">University of Central Florida [cite: 9, 47]</p>
+                            </div>
                         </div>
                     </div>
-
+                
                     <div class="cf w-100 measure-wide">
                         <div class="fl w-third pa2">
                             <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/han.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                                <img src="./assets/jie.png" class="db bg-center cover aspect-ratio--object br-100" alt="Jie Gao">
                             </div>
-                            <a href="#" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Han Jiang</p>
-                                <p class="f6 fw4 mt2 black-60">Johns Hopkins University</p>
-                            </a>
+                            <div class="ph2 ph0-ns pb3 db">
+                                [cite_start]<p class="f5-ns mb0 fw6 black-90">Jie Gao (Co-organizer) [cite: 50]</p>
+                                [cite_start]<p class="f6 fw4 mt2 black-60">McGill University & Mila [cite: 50, 51]</p>
+                            </div>
                         </div>
                         <div class="fl w-third pa2">
                             <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/valerie.png" class="db bg-center cover aspect-ratio--object br-100" style="object-fit: cover;">
+                                <img src="./assets/haolun.png" class="db bg-center cover aspect-ratio--object br-100" alt="Haolun Wu">
                             </div>
-                            <a href="https://valeriechen.github.io/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Valerie Chen</p>
-                                <p class="f6 fw4 mt2 black-60">Carnegie Mellon University</p>
-                            </a>
+                            <div class="ph2 ph0-ns pb3 db">
+                                [cite_start]<p class="f5-ns mb0 fw6 black-90">Haolun Wu (Co-organizer) [cite: 53]</p>
+                                [cite_start]<p class="f6 fw4 mt2 black-60">McGill University & Mila [cite: 53]</p>
+                            </div>
                         </div>
                         <div class="fl w-third pa2">
                             <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/haotian.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                                <img src="./assets/susanne.png" class="db bg-center cover aspect-ratio--object br-100" alt="Susanne Lajoie">
                             </div>
-                            <a href="https://haotian-li.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Haotian Li</p>
-                                <p class="f6 fw4 mt2 black-60">Microsoft Research Asia</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cf w-100 measure-wide">
-                        <div class="fl w-third pa2">
-                            <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/kim.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                            <div class="ph2 ph0-ns pb3 db">
+                                [cite_start]<p class="f5-ns mb0 fw6 black-90">Susanne Lajoie (Advisor) [cite: 57]</p>
+                                [cite_start]<p class="f6 fw4 mt2 black-60">McGill University [cite: 57]</p>
                             </div>
-                            <a href="https://juhokim.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Juho Kim</p>
-                                <p class="f6 fw4 mt2 black-60">KAIST</p>
-                            </a>
-                        </div>
-                        <div class="fl w-third pa2">
-                            <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/liao.jpg" class="db bg-center cover aspect-ratio--object br-100">
-                            </div>
-                            <a href="http://qveraliao.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Q. Vera Liao</p>
-                                <p class="f6 fw4 mt2 black-60">University of Michigan, Ann Arbor</p>
-                            </a>
-                        </div>
-                        <div class="fl w-third pa2">
-                            <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/wei.png" class="db bg-center cover aspect-ratio--object br-100">
-                            </div>
-                            <a href="https://cocoxu.github.io/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Wei Xu</p>
-                                <p class="f6 fw4 mt2 black-60">Georgia Institute of Technology</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cf w-100 measure-wide">
-                        <div class="fl w-third pa2">
-                            <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/eslami.jpg" class="db bg-center cover aspect-ratio--object br-100">
-                            </div>
-                            <a href="https://www.motahhare.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Motahhare Eslami</p>
-                                <p class="f6 fw4 mt2 black-60">Carnegie Mellon University</p>
-                            </a>
-                        </div>
-                        <div class="fl w-third pa2">
-                            <div class="aspect-ratio aspect-ratio--1x1">
-                                <img src="./assets/xiao.png" class="db bg-center cover aspect-ratio--object br-100">
-                            </div>
-                            <a href="https://ziangxiao.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
-                                <p class="f5-ns mb0 fw6 black-90">Ziang Xiao</p>
-                                <p class="f6 fw4 mt2 black-60">Johns Hopkins University</p>
-                            </a>
                         </div>
                     </div>
                 </section>
@@ -266,12 +258,9 @@
         </article>
     </div>
 
-
     <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
-        <small class="f6 db tc">HEAL@CHI'26</small>
+        <small class="f6 db tc">MAAAI@AIED Workshop</small>
     </footer>
 
-
 </body>
-
 </html>
