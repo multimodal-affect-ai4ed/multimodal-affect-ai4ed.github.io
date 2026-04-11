@@ -34,21 +34,3 @@ a, a:hover, a:active, a:focus {
 .speaker-info {
     width: 70%;
 }
-
-.discord-qr-fab {
-    position: fixed;
-    bottom: 0.75rem;
-    left: 0.75rem;
-    z-index: 100;
-    padding: 0.35rem;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
-}
-
-.discord-qr-fab img {
-    display: block;
-    width: 4.25rem;
-    max-width: 22vw;
-    height: auto;
-}
