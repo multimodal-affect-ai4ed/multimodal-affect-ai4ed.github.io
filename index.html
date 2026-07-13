@@ -42,6 +42,7 @@
                         <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#Opening & Keynote">Opening & Keynote</a>
                         <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#panel">Panel</a>
                         <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#agenda">Agenda</a>
+                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#photos">Photos</a>
                         <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#organizers">Organizers</a>
                     </div>
                 </nav>
@@ -475,15 +476,6 @@
       </article>   
 
 
-      Photos carousel · HTML
-      <!-- ============================================================
-           WORKSHOP PHOTOS CAROUSEL SECTION
-           Drop this <article> block into your existing HTML file.
-           Place your images (062701.jpg … 062707.jpg) in the same
-           folder as your HTML file, or update the src paths below.
-           Requires Tachyons CSS already loaded on the page.
-           ============================================================ -->
-       
       <article class="cf ph3 ph5-ns pv5" id="photos">
         <header class="fn fl-ns w-30-ns pr4-ns">
           <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
@@ -496,180 +488,112 @@
             Highlights from the MAAI workshop, June 27, 2026.
           </p>
        
-          <!-- ── CAROUSEL WRAPPER ──────────────────────────────────── -->
-          <div class="maai-carousel-root" style="position:relative;">
-       
-            <!-- Track -->
-            <div class="maai-track-wrap" style="
-              overflow:hidden;
-              border-radius:6px;
-              background:#1A2340;
-              line-height:0;
-            ">
-              <div class="maai-track" style="
-                display:flex;
-                transition:transform 0.55s cubic-bezier(.4,0,.2,1);
-                will-change:transform;
-              ">
-                <!-- Images — update paths if your images live in a subfolder -->
-                <div class="maai-slide" style="flex:0 0 100%;position:relative;">
-                  <img src="062701.jpg" alt="Workshop photo 1"
-                       style="width:100%;max-height:480px;object-fit:cover;display:block;" loading="lazy">
+          <div class="maai-carousel-root" tabindex="0" role="region" aria-label="Workshop photo carousel">
+            <div class="maai-track-wrap">
+              <div class="maai-track">
+                <div class="maai-slide">
+                  <img src="./assets/062701.jpg" alt="Workshop photo 1" loading="lazy">
                 </div>
-                <div class="maai-slide" style="flex:0 0 100%;position:relative;">
-                  <img src="062702.jpg" alt="Workshop photo 2"
-                       style="width:100%;max-height:480px;object-fit:cover;display:block;" loading="lazy">
+                <div class="maai-slide">
+                  <img src="./assets/062702.jpg" alt="Workshop photo 2" loading="lazy">
                 </div>
-                <div class="maai-slide" style="flex:0 0 100%;position:relative;">
-                  <img src="062703.jpg" alt="Workshop photo 3"
-                       style="width:100%;max-height:480px;object-fit:cover;display:block;" loading="lazy">
+                <div class="maai-slide">
+                  <img src="./assets/062703.jpg" alt="Workshop photo 3" loading="lazy">
                 </div>
-                <div class="maai-slide" style="flex:0 0 100%;position:relative;">
-                  <img src="062704.jpg" alt="Workshop photo 4"
-                       style="width:100%;max-height:480px;object-fit:cover;display:block;" loading="lazy">
+                <div class="maai-slide">
+                  <img src="./assets/062704.jpg" alt="Workshop photo 4" loading="lazy">
                 </div>
-                <div class="maai-slide" style="flex:0 0 100%;position:relative;">
-                  <img src="062705.jpg" alt="Workshop photo 5"
-                       style="width:100%;max-height:480px;object-fit:cover;display:block;" loading="lazy">
+                <div class="maai-slide">
+                  <img src="./assets/062705.jpg" alt="Workshop photo 5" loading="lazy">
                 </div>
-                <div class="maai-slide" style="flex:0 0 100%;position:relative;">
-                  <img src="062706.jpg" alt="Workshop photo 6"
-                       style="width:100%;max-height:480px;object-fit:cover;display:block;" loading="lazy">
+                <div class="maai-slide">
+                  <img src="./assets/062706.jpg" alt="Workshop photo 6" loading="lazy">
                 </div>
-                <div class="maai-slide" style="flex:0 0 100%;position:relative;">
-                  <img src="062707.jpg" alt="Workshop photo 7"
-                       style="width:100%;max-height:480px;object-fit:cover;display:block;" loading="lazy">
+                <div class="maai-slide">
+                  <img src="./assets/062707.jpg" alt="Workshop photo 7" loading="lazy">
                 </div>
               </div>
             </div>
-       
-            <!-- Prev arrow -->
-            <button class="maai-prev" aria-label="Previous photo" style="
-              position:absolute;top:50%;left:-18px;transform:translateY(-50%);
-              background:#14327a;border:none;border-radius:50%;
-              width:40px;height:40px;cursor:pointer;
-              display:flex;align-items:center;justify-content:center;
-              box-shadow:0 2px 8px rgba(0,0,0,.25);
-              transition:background .15s;
-              z-index:10;
-            ">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+
+            <button class="maai-prev" type="button" aria-label="Previous photo">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M10 3L5 8l5 5" stroke="#fff" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
-       
-            <!-- Next arrow -->
-            <button class="maai-next" aria-label="Next photo" style="
-              position:absolute;top:50%;right:-18px;transform:translateY(-50%);
-              background:#14327a;border:none;border-radius:50%;
-              width:40px;height:40px;cursor:pointer;
-              display:flex;align-items:center;justify-content:center;
-              box-shadow:0 2px 8px rgba(0,0,0,.25);
-              transition:background .15s;
-              z-index:10;
-            ">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+
+            <button class="maai-next" type="button" aria-label="Next photo">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M6 3l5 5-5 5" stroke="#fff" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
-       
-            <!-- Dot indicators -->
-            <div class="maai-dots" style="
-              display:flex;justify-content:center;gap:8px;
-              padding-top:14px;
-            "></div>
-       
-            <!-- Progress bar -->
-            <div style="
-              margin-top:10px;height:3px;
-              background:rgba(20,50,122,.12);border-radius:2px;overflow:hidden;
-            ">
-              <div class="maai-progress-bar" style="
-                height:100%;width:0%;
-                background:#14327a;
-                transition:width linear;
-              "></div>
+
+            <div class="maai-dots"></div>
+
+            <div class="maai-progress-wrap">
+              <div class="maai-progress-bar"></div>
             </div>
-       
-          </div><!-- end .maai-carousel-root -->
+          </div>
         </div>
       </article>
        
-      <!-- ── CAROUSEL SCRIPT ──────────────────────────────────────── -->
-      <style>
-        .maai-prev:hover, .maai-next:hover { background: #085041 !important; }
-        .maai-dot {
-          width:8px; height:8px; border-radius:50%;
-          background:rgba(20,50,122,.22); border:none; padding:0; cursor:pointer;
-          transition:background .2s, transform .2s;
-        }
-        .maai-dot.active {
-          background:#14327a; transform:scale(1.35);
-        }
-        /* Pause auto-scroll on hover */
-        .maai-carousel-root:hover .maai-progress-bar {
-          animation-play-state: paused !important;
-        }
-      </style>
-       
       <script>
-      (function () {
-        var INTERVAL  = 4500;   /* ms between auto-advances           */
-        var TOTAL     = 7;      /* number of slides                    */
-       
-        var root      = document.querySelector('.maai-carousel-root');
-        var track     = root.querySelector('.maai-track');
-        var dotsWrap  = root.querySelector('.maai-dots');
-        var bar       = root.querySelector('.maai-progress-bar');
-        var btnPrev   = root.querySelector('.maai-prev');
-        var btnNext   = root.querySelector('.maai-next');
-       
-        var current   = 0;
-        var timer     = null;
-        var paused    = false;
-       
-        /* ── Build dots */
+      document.addEventListener('DOMContentLoaded', function () {
+        var INTERVAL = 4500;
+        var root = document.querySelector('.maai-carousel-root');
+        if (!root) return;
+
+        var track = root.querySelector('.maai-track');
+        var slides = root.querySelectorAll('.maai-slide');
+        var dotsWrap = root.querySelector('.maai-dots');
+        var bar = root.querySelector('.maai-progress-bar');
+        var btnPrev = root.querySelector('.maai-prev');
+        var btnNext = root.querySelector('.maai-next');
+        var TOTAL = slides.length;
+        var current = 0;
+        var timer = null;
+        var paused = false;
+        var autoPlay = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
         for (var i = 0; i < TOTAL; i++) {
           var d = document.createElement('button');
+          d.type = 'button';
           d.className = 'maai-dot' + (i === 0 ? ' active' : '');
           d.setAttribute('aria-label', 'Go to photo ' + (i + 1));
           d.dataset.idx = i;
           dotsWrap.appendChild(d);
         }
         var dots = dotsWrap.querySelectorAll('.maai-dot');
-       
-        /* ── Go to slide */
+
         function goTo(n, resetTimer) {
           current = ((n % TOTAL) + TOTAL) % TOTAL;
           track.style.transform = 'translateX(-' + (current * 100) + '%)';
-          dots.forEach(function (d, i) {
-            d.classList.toggle('active', i === current);
+          dots.forEach(function (dot, i) {
+            dot.classList.toggle('active', i === current);
+            dot.setAttribute('aria-current', i === current ? 'true' : 'false');
           });
           if (resetTimer !== false) restartTimer();
         }
-       
-        /* ── Progress bar animation */
+
         function startBar() {
+          if (!autoPlay) return;
           bar.style.transition = 'none';
           bar.style.width = '0%';
-          /* force reflow */
-          bar.offsetWidth; // eslint-disable-line
+          bar.offsetWidth;
           bar.style.transition = 'width ' + INTERVAL + 'ms linear';
           bar.style.width = '100%';
         }
-       
+
         function stopBar() {
           bar.style.transition = 'none';
           bar.style.width = '0%';
         }
-       
-        /* ── Timer */
+
         function restartTimer() {
           clearInterval(timer);
           stopBar();
-          if (!paused) {
+          if (!paused && autoPlay) {
             startBar();
             timer = setInterval(function () {
               goTo(current + 1, false);
@@ -677,15 +601,13 @@
             }, INTERVAL);
           }
         }
-       
-        /* ── Controls */
+
         btnPrev.addEventListener('click', function () { goTo(current - 1); });
         btnNext.addEventListener('click', function () { goTo(current + 1); });
-        dots.forEach(function (d) {
-          d.addEventListener('click', function () { goTo(parseInt(d.dataset.idx)); });
+        dots.forEach(function (dot) {
+          dot.addEventListener('click', function () { goTo(parseInt(dot.dataset.idx, 10)); });
         });
-       
-        /* ── Pause on hover / touch */
+
         root.addEventListener('mouseenter', function () {
           paused = true;
           clearInterval(timer);
@@ -695,8 +617,7 @@
           paused = false;
           restartTimer();
         });
-       
-        /* ── Swipe support for mobile */
+
         var touchStartX = null;
         root.addEventListener('touchstart', function (e) {
           touchStartX = e.touches[0].clientX;
@@ -707,21 +628,16 @@
           if (Math.abs(dx) > 40) goTo(dx < 0 ? current + 1 : current - 1);
           touchStartX = null;
         }, { passive: true });
-       
-        /* ── Keyboard support */
+
         root.addEventListener('keydown', function (e) {
-          if (e.key === 'ArrowLeft')  goTo(current - 1);
+          if (e.key === 'ArrowLeft') goTo(current - 1);
           if (e.key === 'ArrowRight') goTo(current + 1);
         });
-       
-        /* ── Kick off */
+
         goTo(0);
-      })();
+      });
       </script>
-      <!-- ============================================================
-           END WORKSHOP PHOTOS CAROUSEL
-           ============================================================ -->
-           
+
         <article class="cf ph3 ph5-ns pv5" id="cfp">
             <header class="fn fl-ns w-30-ns pr4-ns">
                 <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">

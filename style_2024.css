@@ -90,3 +90,152 @@ a, a:hover, a:active, a:focus {
     object-position: center top;
     display: block;
 }
+
+/* Workshop photos carousel */
+.maai-carousel-root {
+    position: relative;
+    padding: 0 2.5rem;
+    outline: none;
+}
+
+.maai-carousel-root:focus-visible {
+    box-shadow: 0 0 0 3px rgba(20, 50, 122, 0.35);
+    border-radius: 6px;
+}
+
+.maai-track-wrap {
+    overflow: hidden;
+    border-radius: 6px;
+    background: #1A2340;
+    line-height: 0;
+    aspect-ratio: 16 / 9;
+}
+
+.maai-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.55s cubic-bezier(.4, 0, .2, 1);
+    will-change: transform;
+}
+
+.maai-slide {
+    flex: 0 0 100%;
+    position: relative;
+    height: 100%;
+}
+
+.maai-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.maai-prev,
+.maai-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #14327a;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    transition: background .15s;
+    z-index: 10;
+}
+
+.maai-prev {
+    left: 0;
+}
+
+.maai-next {
+    right: 0;
+}
+
+.maai-prev:hover,
+.maai-next:hover {
+    background: #085041;
+}
+
+.maai-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 14px;
+}
+
+.maai-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(20, 50, 122, .22);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background .2s, transform .2s;
+}
+
+.maai-dot.active {
+    background: #14327a;
+    transform: scale(1.35);
+}
+
+.maai-progress-wrap {
+    margin-top: 10px;
+    height: 3px;
+    background: rgba(20, 50, 122, .12);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.maai-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #14327a;
+    transition: width linear;
+}
+
+@media (max-width: 40em) {
+    .maai-carousel-root {
+        padding: 0;
+    }
+
+    .maai-prev,
+    .maai-next {
+        width: 36px;
+        height: 36px;
+        top: auto;
+        bottom: 12px;
+        transform: none;
+        background: rgba(20, 50, 122, 0.88);
+    }
+
+    .maai-prev {
+        left: 12px;
+    }
+
+    .maai-next {
+        right: 12px;
+    }
+
+    .maai-track-wrap {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .maai-track {
+        transition: none;
+    }
+
+    .maai-progress-wrap {
+        display: none;
+    }
+}
